@@ -1,0 +1,10 @@
+version: "1.0"
+repository:
+  default_branch: "main"
+mappings:
+  - code: "src/**/*.py"
+    docs: ["docs/api.md"]
+    priority: high
+content_triggers:
+  - pattern: "def \\w+"
+    docs: ["docs/api.md"]
